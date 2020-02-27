@@ -5,7 +5,7 @@ class Calculadora {
     Scanner scanner = new Scanner(System.in);
 
     System.out.println("Bem vindo à Calculadora.java!");
-    System.out.println("Digite: 1 - Soma");
+    System.out.println("Digite: 1 - Soma | 2 - Subtração");
     int opr = scanner.nextInt();
 
     System.out.println("Insira o primeiro valor");
@@ -18,10 +18,17 @@ class Calculadora {
       case 1:
         System.out.println("Soma: " + Calculadora.soma(n1, n2));
         break;
+      case 2:
+        System.out.println("Subtração: " + Calculadora.subtracao(n1, n2));
+        break;
     }
   }
 
   public static int soma(int n1, int n2) {
     return n1 + n2;
+  }
+
+  public static int subtracao(int n1, int n2) {
+    return n1 - n2;
   }
 }
